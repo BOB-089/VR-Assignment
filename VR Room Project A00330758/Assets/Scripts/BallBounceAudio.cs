@@ -14,6 +14,6 @@ public class BallBounceAudio : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        audioSource.PlayOneShot(audioSource.clip, volume * rb.linearVelocity.magnitude);
+        audioSource.PlayOneShot(audioSource.clip, Mathf.Clamp01(volume * rb.linearVelocity.magnitude));
     }
 }
