@@ -38,6 +38,7 @@ TagManager:
   - SamplesInfoPanel
   - QDSUIToggleCheckboxRadio
   - QDSUIToggleThumbnail
+  - Hat
   layers:
   - Default
   - TransparentFX
