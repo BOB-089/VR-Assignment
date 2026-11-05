@@ -13,7 +13,6 @@ public class ShowToolTips : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered: " + other.name);
         if (other.tag == "Player" && !activated)
         {
             toolTip1.SetActive(true);
